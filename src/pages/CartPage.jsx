@@ -17,7 +17,7 @@ export default function CartPage() {
             <h1 className="text-2xl font-bold">Cart Page</h1>
             <div className="">
                 {items.map(item => (
-                    <div className='bg-slate-100 my-1 max-w-80 mx-auto shadow-lg rounded-md py-3 px-4 flex justify-between' key={item.id}>
+                    <div className='bg-slate-100 my-1 md:max-w-screen-md mx-auto shadow-lg rounded-md py-5 px-4 flex justify-between' key={item.id}>
                         <div className="flex">
                             <button onClick={() => removeItems(item.name)} className='text-gray-500'>×</button>
                             <h1 className="font-semibold px-2 text-gray-700">{item.name}</h1>
